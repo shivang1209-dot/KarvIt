@@ -1,0 +1,138 @@
+/* Ensure responsive behavior across different screen sizes */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #57C4E5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+#karvit-title {
+  font-family: 'Pacifico', cursive;
+  color: #3C4692;
+  font-size: 2rem;
+  margin-top: -10px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main container responsiveness */
+#main-container {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive heading */
+h1 {
+  color: #3C4692;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* General button styling */
+button {
+  background-color: #57C4E5;
+  padding: 12px 18px;
+  border: 1px solid #ff00ff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+}
+
+button:hover {
+  background-color: #00d4ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Sections */
+#install-section,
+#verify-section,
+#drive-section {
+  margin-top: 20px;
+}
+
+#installStatus {
+  font-size: 14px;
+  color: red;
+}
+
+/* File carver container */
+#file-carver-container {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 10px 16px;
+      max-width: 100%;
+  }
+
+  input {
+      padding: 10px;
+  }
+
+  #main-container, #file-carver-container {
+      padding: 15px;
+  }
+}
+
+/* Media query for very small devices (e.g., phones) */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.2rem;
+  }
+
+  button {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+  }
+
+  input {
+      padding: 8px;
+  }
+}

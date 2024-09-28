@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karv It</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main Container for Win32DiskImager -->
+  <div id="main-container">
+    <h1 id="karvit-title">Welcome to KarvIt !!!</h1>
+
+    <div id="install-section" class="card">
+      <p>To Install Win32DiskImager, Click Below:</p>
+      <button id="installButton">Install Win32DiskImager</button>
+      <p id="installStatus"></p>
+    </div>
+
+    <div id="verify-section" class="card">
+      <p>To Verify Win32DiskImager, Click Below:</p>
+      <button id="browseButton">Browse for Win32DiskImager</button>
+    </div>
+
+    <div id="drive-section" class="card">
+      <label for="driveEntry">Enter Drive Name (e.g., E: ) ~ </label>
+      <input type="text" id="driveEntry">
+      <button id="createImageButton">Create Disk Image</button>
+    </div>
+
+    <!-- New button to navigate to File Carver -->
+    <div id="carver-section" class="card">
+      <p>Go to the File Carver page below:</p>
+      <button id="goToCarverButton">Go to File Carver</button>
+    </div>
+  </div>
+
+  <!-- File Carver Container (Hidden by default) -->
+  <div id="file-carver-container" style="display: none;">
+    <h1>File Carver</h1>
+    
+    <label for="DiskImagePath">Enter Disk Image Path - </label>
+    <input type="text" id="DiskImagePath">
+
+    <label for="fileTypeDropdown">Select the type of file you want to carve:</label>
+    <select id="fileTypeDropdown">
+      <option value="png">PNG</option>
+      <option value="jpeg">JPEG</option>
+      <option value="evtx">EVTX</option>
+      <option value="pdf">PDF</option>
+    </select>
+
+    <button id="startCarvingButton">Start Carving</button>
+    <button id="backButton">Back to Main</button>
+  </div>
+
+  <script src="renderer.js"></script>
+
+</body>
+</html>
